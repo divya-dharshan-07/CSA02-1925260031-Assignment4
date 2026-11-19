@@ -1,0 +1,3 @@
+# Task 3 – Unions and Memory Layout
+
+A structure containing float, int and char[8] stores all members simultaneously; a union overlays them and stores only one active value. The tag identifies which member is valid. On a typical GCC ABI, the union size is 8 and the enum tag plus alignment/padding gives a 12-byte struct; verify using sizeof on the target. Reading a different union member is implementation-dependent representation reinterpretation and does not yield a meaningful converted value. Three separate typed arrays can avoid per-record tag/padding but require indexing/partitioning; void* allocations add allocator overhead, pointer storage and indirection.
