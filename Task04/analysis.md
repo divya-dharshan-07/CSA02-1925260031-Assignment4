@@ -1,0 +1,3 @@
+# Task 4 – Structure Forensics
+
+Passing struct account by value modifies only a local copy, so the caller's balances remain unchanged. p is a pointer, so p.number and p.balance are invalid; use p->number and p->balance (or (*p).number). The repaired function accepts struct account* and updates through ->. The printed addresses demonstrate the same object address is passed. Pass by value for small independent copies, by pointer for modification/large objects, and by const pointer for read-only access. Returning a modified structure by value is another valid design but copies sizeof(struct account) bytes.
