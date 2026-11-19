@@ -1,29 +1,22 @@
-# C Programming – Assignment 4
-
-**Student:** Divya Dharshan  
-**Register Number:** 1925260031  
-**Programme:** B.Tech – Artificial Intelligence and Machine Learning  
-**Institution:** SIMATS Engineering  
-**Compiler:** Record the exact GCC version using `gcc --version`.
-
-## Coverage
-Structures, nested structures, arrays of structures, tagged unions, structure pointers (dot and arrow operators), memory layout/alignment/padding, debugging, storage classes (`auto`, `static`, `extern`, `register`), complexity analysis, and the College Canteen Design Challenge.
-
-## Structure
-Create folders Task01 through Task06. Each task folder should contain its C source, required input/data files, analysis, and genuine output evidence.
+# C Programming – Assignment 4 (CO4)
+**Student:** Divya Dharshan | **Register:** 1925260031  
+**Programme:** B.Tech AIML | **Institution:** SIMATS Engineering  
+**Compiler:** GCC; record the exact local version with `gcc --version`.
 
 ## Build and run
-From the relevant task folder in PowerShell:
-
+From each Task folder:
 ```powershell
-gcc -std=c11 -Wall -Wextra -Wpedantic main.c -o main.exe
-.\\main.exe
+gcc -std=c11 -Wall -Wextra -pedantic main.c -o main.exe
+.\main.exe
 ```
+Tasks 1–6 contain implementations and analysis notes. Task 5's cross-file `extern` demonstration should be compiled with both source files together. Capture genuine terminal screenshots after running locally.
 
-Use the actual source filename where it differs from `main.c`. Record the exact compiler version and command used.
+## Task summary
+1. Patient data diagnosis and nested structure redesign.
+2. Courier parcel nested structures, pointer access and selection sort.
+3. Tagged union and memory layout.
+4. Structure pass-by-value defect and pointer repair.
+5. Automatic/static/extern/register storage classes.
+6. College canteen tagged-union inventory and billing challenge.
 
-## Evidence
-Verify `sizeof`, alignment, and padding on the student's actual compiler. Do not invent platform-dependent values, timings, outputs, or screenshots. State assumptions and alternative designs clearly.
-
-## Status
-Repository setup started. Add each task implementation against its full task statement and any supplied starter-code/TODO block.
+Verify platform-dependent sizeof results and date/expiry behaviour on your compiler. Do not submit fabricated screenshots or measurements.
