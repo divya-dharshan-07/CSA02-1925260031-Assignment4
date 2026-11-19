@@ -1,0 +1,3 @@
+# Task 5 – Storage Classes
+
+Automatic local token is reinitialized on every call (1001 each time); static local persists for the lifetime of the program and retains 1001,1002,1003. An extern declaration in a second source file refers to one global definition; compile both .c files together to demonstrate cross-file sharing. A register loop variable has block scope and automatic lifetime; its address cannot be taken in standard C. All token operations are O(1). A caller-owned counter passed by pointer supports independent veg/non-veg counters without hidden global state. Do not put multiple state-changing calls in one printf: C does not specify argument evaluation order.
