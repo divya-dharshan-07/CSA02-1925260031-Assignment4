@@ -1,0 +1,3 @@
+# Task 2 – Nested Structures
+
+Entities: Date, Address, Parcel. Sender and receiver reuse Address; Parcel nests two addresses and booking date. Selection-sort pseudocode: for each i, find the minimum weight in i..n−1, then swap complete structures. City query: scan bookings and print when receiver.city matches the requested city. Third parcel receiver PIN: p[2].to.pincode; pointer form q->to.pincode where q=&p[2]. Swapping copies sizeof(struct parcel) bytes per structure assignment (implementation may use optimized moves). A flat structure duplicates address/date fields and loses reusable nested types; compare sizeof on the local compiler.
